@@ -59,7 +59,15 @@ body{
 
 .item2 a{
     color: white;
-    overflow: hidden;
+}
+
+.item3 iframe {
+    text-align: center;
+}
+
+.item6 a{
+    color: white;
+    
 }
 
 ul {
