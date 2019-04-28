@@ -5,6 +5,7 @@ body{
     color: #333;
     background: #fff;
     text-align: center;
+    text-decoration:none;/*取消網頁底線*/
 }
 
 .item1{grid-area: header;}
