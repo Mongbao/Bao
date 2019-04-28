@@ -33,7 +33,7 @@ body{
 
 #bao .bg{
     position: absolute;
-    background: url(/Bao/bg.jpg);
+    background: url(/bg.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
