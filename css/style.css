@@ -59,6 +59,7 @@ body{
 
 .item2 a{
     color: white;
+    overflow: hidden;
 }
 
 ul {
