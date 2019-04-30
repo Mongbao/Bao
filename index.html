@@ -5,7 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css">
     <title>Bao</title>
+
+    <style>
+        .item2{
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding: 16px;
+        }
+
+        .item2 a{
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: #818181;
+            display: block;
+        }
+
+        .item2 a:hover{
+            color: #f1f1f1;
+        }
+    </style>
+    
+        <!--
+        <style>  
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 150px; /* Width of Menu Items */
+            /*border-bottom: 1px solid #ccc;*/
+            }
+        ul li {
+            position: relative;
+                left: -50px;
+                } 
+        li ul {
+            position: absolute;
+            left: 140px; /* Set 1px less than menu width */
+            top: -60px;
+            display: none;
+            }
+        /* Styles for Menu Items */
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #777;
+            background:rgba(0, 0, 0, 0.5); /* IE6 Bug */
+            padding: 5px;
+            /*border: 1px solid #ccc;
+            border-bottom: 0;*/
+            }
+        
+        
+        * html ul li { float: left;  }
+        * html ul li a { height: 1%; }/* End */
+        ul li a:hover { color: gray; background: #f9f9f9; } /* Hover Styles */
+        li ul li a { padding: 5px 2px; } /* Sub Menu Styles */
+        li:hover ul, li.over ul { display: block; } /* The magic */
+    </style>-->
 </head>
 <body>
 
@@ -17,22 +81,41 @@
         </div> 
         
         <div class="item2">
-            <ul>
+            <a href="/page1/picture1.html" target="test"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#">Service</a>
+            <a href="#">Clients</a>
+            <a href="/video.html" target="test">Contact</a>
+
+
+            <!--<hr color="black"> 
+            <ul id="nav">
                 <li><a class="active" href="page1/picture1.html">Home</a></li>
                 <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="http://www.google.com"> About</a></li>
+                <li><a href="#contact">Contact</a>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">IG</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> About</a>
+                    <ul>
+                        <li><a href="page1/">History</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Office</a></li>
+                    </ul>
+                </li>
             </ul>
+            <hr color="black">-->
             
         </div>
         <div class="item3">
             <div class="news">
-                <iframe src="page1/picture1.html" width="70%" height="620px" frameborder=""></iframe>
+                <iframe src="" width="500px" height="500px" frameborder="0" name="test" ></iframe>
             </div>
         </div>
-        
-        <div class="item5">Bao</div>
+        <div class="item5"><hr color="black"> Bao</div>
         <div class="item6">
+            <hr color="black">
             Design by 
             <a href="index.html" target="_self">Bao</a>
         </div>
