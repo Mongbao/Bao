@@ -13,7 +13,19 @@ a{
 }
 
 .item1{grid-area: header;}
-.item2{grid-area: menu;}
+.item2{
+    grid-area: menu;
+    height: 100%;
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 16px;
+    
+}
 .item3{grid-area: main;}
 .item5{grid-area: footer1}
 .item6{grid-area: footer2}
@@ -67,6 +79,14 @@ a{
 
 .item2 a{
     color: white;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: #818181;
+    display: block;
+}
+
+.item2 a:hover{
+    color: #f1f1f1;
 }
 
 .item3 iframe {
@@ -125,6 +145,10 @@ li a:hover:not(.active) {
     }
 
     .item2{
-        display: none;
+        position: relative;
+        margin: 0 auto;
+        top:20px;
+        padding: 3px;
+        border-radius: 5px;
     }
 }
