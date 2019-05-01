@@ -7,58 +7,59 @@
     <title>Document</title>
 
     <style>
-        .body{
+        *{
             margin: 0;
-            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .video-container{
+        body{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .grid{
+
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            position: absolute;
-            top: 0;
-            left: 0;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:200px 200px;
+            grid-gap: 10px;
+            justify-content: center;
+        }
+
+        .grid>div{
             width: 100%;
-            height: 100%;
-            padding-bottom: 56.25;
+            background-color: black;
+            color: white;
         }
-        .box,
-        .down div{
-            grid-column: span2;
+
+        @media only screen and (max-width: 600px) {
+        .grid{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
         }
-        .top{
-            z-index: -1;
-        }
+    }
+       
+
     </style>
 </head>
 <body>
     <script>
         confirm("史偉任小雞雞");
     </script>
-    
-    <div class="video-container">
-        
-        <footer>
-            <div class="top">
-            <!--<iframe src="https://www.webdesigns.com.tw/" width="1000px" height="400px" frameborder="0" scrolling="no">
-            </iframe>-->
-        </footer>
-        
-        </div>
-        
-        <main>
-            <div class="down">
-                <div class="box">
-            <div class="left">oajsdfoj</div>
 
-            <div class="box">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=1EWLvvml-vc" frameborder="0" allowfullscreen></iframe></div>
-            </div> 
-            </div>
-            
-            
-
-        </main>
-        
+    <div class="container grid">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box6">4</div>
+        <div class="box4">5</div>
+        <div class="box5">6</div>
     </div>
 </body>
 </html>
