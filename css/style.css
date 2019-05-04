@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2rem;
@@ -21,24 +22,36 @@ a{
     z-index: 1;
     top:0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     padding: 16px;
     
 }
-.item3{grid-area: main;}
-.item5{grid-area: footer1}
-.item6{grid-area: footer2}
+.item3{
+    padding: 20px;
+    grid-area: main;
+}
+.item3 iframe{
+    width: 50%;
+    height: 500px;
+    border-radius: 5px;
+}
+.item5{
+    grid-area: footer;
+    position: relative;
+    margin-top: 100px;
+    height: 50px;
+    background: #111;
+}
 
 .grid-container{
     display: grid;
     grid-template-areas: 
-        'header header header header header header'
-        'menu main main main main main'
-        'footer1 footer1 footer1 footer1 footer1 footer1'
-        'footer2 footer2 footer2 footer2 footer2 footer2';
+        'header header header header header'
+        'main main main main main'
+        'footer footer footer footer footer';
     grid-gap: 10px;
-    grid-template-columns: 5% 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr;
     grid-template-rows: auto;
 }
 
@@ -91,9 +104,11 @@ a{
 
 .item3 iframe {
     padding: 30px;
+    background: white;
+    border-radius: 5px;
 }
 
-.item6 a{
+.item5 a{
     color: white;
     
 }
@@ -140,8 +155,7 @@ li a:hover:not(.active) {
             'header' 
             'main'
             'menu'
-            'footer1'
-            'footer2';
+            'footer';
     }
 
     .item2{

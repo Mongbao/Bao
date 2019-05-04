@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>video</title>
+
+    <script>
+        function Menu(number){
+            var menu=document.getElementById("menu-"+number);
+            menu.classList.toggle("hide");
+        }
+    </script>
 
     <style>
+        .hide{
+            display: none;
+        }
+    </style>
+    <!-- <style>
         *{
             margin: 0;
             padding: 0;
@@ -46,20 +58,68 @@
     }
        
 
-    </style>
+    </style> -->
 </head>
 <body>
-    <script>
-        confirm("史偉任小雞雞");
-    </script>
+    <div >
+        <div onclick="Menu(1);">選單1</div>
+            <ul id="menu-1">
+                <li>項目1</li>
+                <li>項目2</li>
+                <li>項目3</li>
+            </ul>
+        
+        <div onclick="Menu(2);">選單1</div>
+            <ul id="menu-2">
+                <li>項目1</li>
+                <li>項目2</li>
+                <li>項目3</li>
+            </ul>
+        
+        <div onclick="Menu(3);">選單1</div>
+            <ul id="menu-3">
+                <li>項目1</li>
+                <li>項目2</li>
+                <li>項目3</li>
+            </ul>
+    </div>
+    
+    
+    <div id="demo"></div>
+    <div id="demo1"></div>
 
-    <div class="container grid">
+    <form>
+        <input id="first" type="text" name="firstname"><br><br>
+        <input id="last" type="text" name="lastname"><br><br>
+        <input id="total" type="submit"  value="ok">
+    </form>
+    <div id="demo2"></div>
+    <script>
+        document.getElementById("demo").innerHTML="Hello_world"; 
+        document.getElementById("demo1").innerHTML=Date();
+        var first=document.getElementById("first").value;
+        var last=document.getElementById("last").value;
+        
+        document.getElementById("demo2").innerHTML=first+lasat;
+
+        function myfun(){
+
+        }
+    </script>
+    
+    
+    <!-- <script>
+        confirm("史偉任小雞雞");
+        window.alert(563413);
+    </script> -->
+
+    <!-- <div class="container grid">
         <div class="box1">1</div>
         <div class="box2">2</div>
         <div class="box3">3</div>
         <div class="box6">4</div>
         <div class="box4">5</div>
         <div class="box5">6</div>
-    </div>
+    </div> -->
 </body>
 </html>
