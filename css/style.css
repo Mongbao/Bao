@@ -36,6 +36,8 @@ a{
     width: 50%;
     height: 500px;
     border-radius: 5px;
+    width: 60%;
+    height: 650px
 }
 .item5{
     grid-area: footer;
