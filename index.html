@@ -48,6 +48,7 @@
     </style>-->
 </head>
 <body>
+    
 
     <div class="grid-container">
         <div id="bao" class="item1">
@@ -56,7 +57,12 @@
             <p style="color: aquamarine">Welcon</p>
         </div> 
         
-        <div class="item2">
+        <span style="font-size:30px;cursor: pointer" onclick="openNav()">&#9776 
+        </span>
+        
+        <div id="mySidenav" class="item2">
+            
+            <a href="#" class="closebtn" onclick="closeNav()" >&times;</a>
             <a href="./page1/picture1.html" target="test"></i> Home</a>
             <a href="#">Service</a>
             <a href="./bao.html" target="_self">Clients</a>
@@ -95,6 +101,15 @@
             Design by 
             <a href="index.html" target="_self">Bao</a>
         </div>
+    
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width="150px";
+        }
+        function closeNav(){
+            document.getElementById("mySidenav").style.width="0";
+        }
+    </script>
 </div>
 
 </body>

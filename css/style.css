@@ -17,14 +17,15 @@ a{
 .item2{
     grid-area: menu;
     height: 100%;
-    width: 130px;
+    width: 0;
     position: fixed;
     z-index: 1;
     top:0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:#111;
     overflow-x: hidden;
-    padding: 16px;
+    padding-top: 60px;
+    transition: 0.5s;
     
 }
 .item3{
@@ -91,15 +92,24 @@ a{
 }
 
 .item2 a{
-    color: white;
-    padding: 6px 8px 6px 16px;
+    color: #818181;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: #818181;
+    font-size: 25px;
     display: block;
+    transition: 0.3s;
 }
 
 .item2 a:hover{
     color: #f1f1f1;
+}
+
+.item2 .closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .item3 iframe {
@@ -117,6 +127,13 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(255, 255, 255)
 }
 
 /*li a {
@@ -147,6 +164,10 @@ li a:hover:not(.active) {
     border: 1px solid #000;
 }*/
 
+/* @media screen and(max-height:450px){
+    .sidenav{padding-top: 15px;}
+    .sidenav{font-size: 18px;}
+} */
 
 @media screen and (max-width:700px){
     .grid-container{
@@ -158,7 +179,7 @@ li a:hover:not(.active) {
             'footer';
     }
 
-    .item2{
+    /* .item2{
         grid-row: 3/4;
         position: relative;
         justify-self: center;
@@ -168,6 +189,9 @@ li a:hover:not(.active) {
         margin: 0 auto;
         top:10px;
         padding: 3px;
-        border-radius: 5px;*/
-    }
+        border-radius: 5px;
+    } */
+
+
 }
+
