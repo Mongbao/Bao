@@ -98,6 +98,7 @@ a{
     font-size: 25px;
     display: block;
     transition: 0.3s;
+    text-align: justify;
 }
 
 .item2 a:hover{
